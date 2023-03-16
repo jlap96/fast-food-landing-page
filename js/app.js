@@ -27,7 +27,7 @@ var contenedor = document.querySelector('.slider'),
     btnIzquierdo = document.getElementById("btn-izquierda"),
     btnDerecho = document.getElementById("btn-derecha");
 
-    //EVENTO PARA EL BOTON DERECHO
+    //EVENTO PARA EL BOTON DERECHOd
 
     btnDerecho.addEventListener("click", function() {
         contenedor.scrollLeft += contenedor.offsetWidth;
