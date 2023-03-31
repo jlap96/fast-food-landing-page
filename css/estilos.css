@@ -17,6 +17,10 @@
     font-family: var(--text-defaul);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--color-background);
 }
