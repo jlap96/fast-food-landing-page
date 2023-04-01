@@ -638,7 +638,7 @@ footer{
 
 .sociales-metodo{
     width: 25%;
-    height: 100px;
+    height: 120px;
     background: #333;
     color: white;
     position: relative;
@@ -679,6 +679,46 @@ footer{
 .sociales-metodo i:hover{
     transform: translateY(-20px); /*Sube -20 en el eje Y*/
 }
+
+/*BOTON DE IR ARRIBA*/
+#btn-top{
+    width: 50px;
+    height: 50px;
+    background: var(--color-primario);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(200%);
+    transition: all 0.5s;
+}
+
+#btn-top.show{
+    transform: translateY(0);
+}
+
+#btn-top.scrollFinal{
+    transform: translateY(-250%);
+}
+
+#btn-top span{
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+
+#btn-top:hover{
+    background: #d89127;
+}
+
+#btn-top:hover span{
+    transform: translateY(-3px);
+}
+
 
 /*MEDIA QUERY*/
 @media  screen and (max-width: 850px) {
@@ -824,5 +864,10 @@ footer{
 
      .sociales-metodo{
         width: 50%;
+     }
+
+     /*BOTON DE IR ARRIBA*/
+     #btn-top{
+        display: none;
      }
 }
